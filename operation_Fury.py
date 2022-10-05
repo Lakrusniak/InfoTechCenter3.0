@@ -12,9 +12,9 @@ print('\n\033[1;31;0"m Welcome to Operation Fury InfoTech Center')
 
 sleep(2)
 
-print('\n \033[1;28;0"mOperation fury System is Booting Up')
-
-
-
+print('\n \033[1;28;0"mOperation fury System is Booting Up\033[0m')
+for i in range(3):
+    print("OS Booting Up")
+    sleep(1.5)
 
 
