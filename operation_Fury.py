@@ -16,3 +16,9 @@ def weather():
     weatherForecast = ["Rain","Snow","Sunny","Cloudy","Foggy","Storming","Icy"]
     weatherCondition = random.choice(weatherForecast)
     return weatherCondition
+weatherAlert = weather()
+def vrs():
+    if weather() == "Icy":
+        print("\nvrs has changed your alarm 30 minutes earlier based on the NWS forcast of "+weatherAlert)
+
+vrs()
