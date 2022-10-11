@@ -1,4 +1,11 @@
 
+#******************************************************************************
+#ImporntLibraries Here
+from time import sleep# We imported the sleep funtion from the time libary
+
+import random
+#******************************************************************************
+                                                                                     
 #Developer: Landon Krusniak
 #Version: 1.0
 
@@ -6,8 +13,6 @@
 Our Welcome Screen will start our program letting drivers know that the InfoTechCenter OS Loading.
 """
 
-#ImporntLibraries Here
-from time import sleep# We imported the sleep funtion from the time libary
 
 print('\n\033[1;31;0"m Welcome to Operation Fury InfoTech Center')
 
@@ -30,10 +35,11 @@ random.choice function to determine wht the wether is
 pickingfrom a list-using If, Elif &else statemants to check the condition and print a specifc print line 
 """
 
-#Import Libraries here
-import random
+
+
 #Weather condition list using the randome.choice library
 #to randomly chose a codnition and storing it in its brain
+
 def weather():
     weatherForecast = ["Rain","Snow","Sunny","Cloudy","Foggy","Storming","Icy"]
     weatherCondition = random.choice(weatherForecast)
