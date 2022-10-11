@@ -16,11 +16,19 @@ def gas_levelGauge():
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
+def ListOFGasstations():
+   gasstationslist = ["Shell","Circle K","marathon","Speedway","Meijer"]
+   gasstationNearby= random.choice(gasstationslist)
+   return gasstationNearby
+
 #varible calling the gaslevelgauge funtion stored once
 gasLevelIndicator = gas_levelGauge()
 
 def gasLevelAlert():
     if gasLevelIndicator == "Empty":
         print("***WARNING GO GET CAS YOUR WILL RUN OUT***\nCalling Rich Friend")
-
+    elif gasLevelIndicator == "Low":
+        print("Run it to Empty\n Check google maps for gas stations")
+        print("The closest gas station is",ListOFGasstations())
+    
 gasLevelAlert()
