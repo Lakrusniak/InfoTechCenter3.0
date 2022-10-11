@@ -15,3 +15,12 @@ def gas_levelGauge():
     gasLevelList = ["Empty","Low","Quarter_Tank","Halftank","Threequarter tank","Full tank"]
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
+
+#varible calling the gaslevelgauge funtion stored once
+gasLevelIndicator = gas_levelGauge()
+
+def gasLevelAlert():
+    if gasLevelIndicator == "Empty":
+        print("***WARNING GO GET CAS YOUR WILL RUN OUT***\nCalling Rich Friend")
+
+gasLevelAlert()
