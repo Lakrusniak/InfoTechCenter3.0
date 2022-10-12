@@ -25,10 +25,12 @@ def ListOFGasstations():
 gasLevelIndicator = gas_levelGauge()
 
 def gasLevelAlert():
+    milesToGasStation = round(random.uniform(1, 25), 1)
     if gasLevelIndicator == "Empty":
         print("***WARNING GO GET CAS YOUR WILL RUN OUT***\nCalling Rich Friend")
     elif gasLevelIndicator == "Low":
         print("Run it to Empty\n Check google maps for gas stations")
         print("The closest gas station is",ListOFGasstations())
-    
+        print("The closest gas station is",ListOFGasstations(),"which is",milesToGasStation,"miles.")
+
 gasLevelAlert()
