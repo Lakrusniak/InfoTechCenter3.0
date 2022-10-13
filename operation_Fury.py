@@ -14,7 +14,7 @@ Our Welcome Screen will start our program letting drivers know that the InfoTech
 """
 
 
-print('\n\033[1;31;0"m Welcome to Operation Fury InfoTech Center')
+print('\033[1;31;0"m Welcome to Operation Fury InfoTech Center')
 
 sleep(2)
 
@@ -23,6 +23,7 @@ for i in range(3):
     print("OS Booting Up")
     sleep(1.5)
 
+#******************************************************************************
 #gasoline
 #Programe Landon Krusniak
 #version1.0
@@ -70,8 +71,8 @@ def gasLevelAlert():
     else:
         print("Your gas tank is full and you have plenty to drive a week without stopping .")
 
-gasLevelAlert()
 
+#******************************************************************************
 #Wether
 #Developer Landon Krusniak
 #Version 1.0
@@ -115,6 +116,14 @@ def vrs():
         print("\nVRS has changed your alarm to normal minutes based on the NWS forcast of " + weatherAlert)
         print("VRS will only allow your car to go 70MPH")
 
+
+#******************************************************************************************************
+#Call Functions Here..
+
+print()
+gasLevelAlert()
+
 vrs()
+
 
 
